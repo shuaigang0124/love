@@ -170,12 +170,12 @@ export default defineComponent({
           ease: "power3.out",
         });
       // 模型旋转
-      // gsap.to(group.rotation, {
-      //   y: Math.PI * 2,
-      //   duration: 12,
-      //   ease: "none",
-      //   repeat: -1,
-      // });
+      gsap.to(group.rotation, {
+        y: Math.PI * 2,
+        duration: 12,
+        ease: "none",
+        repeat: -1,
+      });
 
       window.addEventListener("resize", methods.onWindowResize, false);
     });
